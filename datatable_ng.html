@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+<script type="text/javascript" src="angular.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div ng-controller="myController">
+		<input type="number" ng-model="rowNumber"/>
+		<br />
+		{{rowNumber}}
+		<table>
+			<thead>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="person in persons | limitTo:rowNumber">
+					<td>{{ person.name }}</td>
+					<td>{{ person.surname }}</td>
+				</tr>
+			</tbody>
+	</table>
+	</div>
+
+
+
+</body>
+</html>
