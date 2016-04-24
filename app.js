@@ -7,9 +7,11 @@ var myController = function($scope){
 		{name:"Tuncay", surname: "Altinpulluk"},
 		{name:"Ece", surname: "Yamak Altinpulluk"},
 		{name:"Emrah", surname: "Altinpulluk"},
-		{name:"Huseyin", surname: "Altinpulluk"}	
+		{name:"Huseyin", surname: "Altinpulluk"},	
+		{name:"Hikmet", surname: "Altinpulluk"}
 		];
 	$scope.persons = persons;
+	$scope.rowNumber = 4;
 };
 
 myApp.controller("myController", myController);
